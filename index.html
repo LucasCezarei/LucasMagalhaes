@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+	<!--Cabeça do site (Links para CSS e Idioma)-->
 	<head>
 		<meta charset="UTF-8">
 		<title>Pagina Inicial</title>
@@ -11,15 +13,18 @@
 	</head>
 	<body>
 
+		<!--Menu Responsivo-->
 		<nav class="menu-responsivo">
 			<ul>
 				<li><a href="index.html">Início</a></li>
 				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contato.html">Contato</a></li>
+				<li><a href="portfolio.html">Material</a></li>
+				<li><a href="contato.html">Contatos</a></li>
 			</ul>
-		</nav>		
+		</nav>	
+		<!--Finalizado (Menu para mobile)-->	
 
+		<!--Layout da barra de navegação-->
 		<div class="layout">
 			<header>
 					<div class="links">
@@ -31,59 +36,51 @@
 								<li><a href="contato.html">Contato</a></li>
 							</ul>
 						</nav>
-
 						<a class="toggle" href="javascript:;">
 							<span></span>
 							<span></span>
 							<span></span>
 						</a>
-
-						<ul class="social">
-							<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
-								<a href="https://www.facebook.com/lucas.cezarei.3"></a>
-							</li>
-
-							<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
-								<a href="https://github.com/LucasCezarei"></a>
-							</li>
-						</ul>
 					</div>
-
-					<h1><strong>Lucas</strong> C. <strong>Magalhaes</strong></h1>
-
-					<p>Data Scientist / Consulting Business Analyst</p>
-
-				</div>
+						<!--Finalizado Barra de navegação-->
 				
+					<h1><strong>Lucas</strong> C. <strong>Magalhaes</strong></h1>
+					<p>Data Scientist / Consulting Business Analyst</p>
+			</div>
 			</header>
-			
+		<!--Finalizado Cabeçalho-->
+
+		<!--Inicio Apresentação-->
 			<main>
 				<section class="sobre">
 					<div class="container">
 						<div class="itens">			
-							
 							<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
 								<img src="images/foto-tag-miolo.png" alt="Foto TAG">
 							</div>
-
 						</div>
-
 						<div class="textos">
-							<p><strong>Olá meu nome é Lucas Cezarei Magalhaes</strong>, este é meu site pessoal, onde vou compartilhar estudos, videos e documentações com você.</p>
-
+							<p><strong>Olá meu nome é Lucas Cezarei Magalhaes</strong></p>
+							<p>Seja muito bem vindo ao meu site pessoal, aqui você terá acesso a diversos materiais de estudos.</p>
+							<p>Clique no botão para saber mais.</p>
 							<a href="introducao.html" class="botao medio"> Continue Lendo</a>
 						</div>
 					</div>
 				</section>
 			</main>
+		<!--Finalizado Apresentação-->
 			
+			<!--Rodapé-->
 			<footer>
 				<div class="logo-rodape">
+					<img src="images/logo.png">
 					<p>@LucasCezarei 2019 Todos os Direitos Reservados</p>
 				</div>
 			</footer>
 		</div>
+		<!--Finalizado Rodapé-->
 
+		<!--Adcionando componentes-->
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/wow/dist/wow.min.js"></script>
 		<script>
@@ -100,5 +97,6 @@
 			  window.location.protocol = "https:"
 			}
 		</script>
+		<!--Componentes Finalizados-->
 	</body>
 </html>
