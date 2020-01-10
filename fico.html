@@ -55,6 +55,7 @@
 			<main>
 				<section class="sobre">
 					<div class="container">	
+                        <img src="images/fico.png">
                         <li class="active">
                             <a href="./">Blaze - Instalações</a>
                         </li>
@@ -66,579 +67,812 @@
                         <li >
                             <a href="../blaze03/">Blaze - Deploy</a>
                         </li>
-                
-                    
+                        <br />
                         <h1 id="blaze-advisor-fico">Blaze Advisor <button onclick="window.open('https://www.fico.com/br/products/fico-blaze-advisor-decision-rules-management-system');">FICO</button></h1>
-                            <p>O Blaze Advisor é um software da empresa FICO que busca tornar as tarefas de decisões de negócios mais eficientes. Em sua página oficial, a FICO caracteriza o Blaze como: </p>
-                            <p>"[...] uma solução escalável que proporciona agilidade e capacidade de ação sem precedentes a empresas de vários setores para tomadas de decisão mais inteligentes, transparentes e justificáveis". </p>
-                            <p>Ainda em sua caracterização:</p>
-                            <p>"[...] com diversos métodos para o desenvolvimento, criação e teste de regras, incluindo árvores de decisões, scorecards, tabelas de decisões, fluxos gráficos de decisões e templates personalizados".</p>
                         </br>
                         <h3 id="instalacoes">Instalações</h3>
-                            <p>Os arquivos para instalação se encontram no seguinte repositório: <button onclick="window.open('https://drive.google.com/drive/folders/1XjpXLq40dpZurVS4NesaBRvp3_zAlgFl?usp=sharing');">REPOSITÓRIO</button>
-                            <p>Instale o arquivo: </p>
-                            <p><strong>jdk-8u221-windows-x64 (JAVA)</strong></p>
-                            <p>Obs: fique atento ao local em que o programa está sendo instalado. No meu caso, ele está na seguinte pasta: <strong>C:\Program Files\Java</strong>
+                            <p><strong>1)</strong> Para a instalação dos arquivos se encontram no seguinte repositório: <button onclick="window.open('https://drive.google.com/drive/folders/1XjpXLq40dpZurVS4NesaBRvp3_zAlgFl?usp=sharing');">REPOSITÓRIO</button>
+                            <p>Arquivo: </p>
+                            <pre><code><p><strong>jdk-8u221-windows-x64 (JAVA)</strong></p></code></pre>
+                            <p>Instalar na pasta <strong>C:\Program Files\Java</strong>
                         <br />
-                            <p><img alt="Screenshot" src="../../images/blaze/01.png" /></p>
                         <br />
-                            <p>Instale o arquivo: <button onclick="window.open('https://marketplace.ficoanalyticcloud.com/apps/134263#!overview');">BLAZE PARA DOWNLOAD</button> <button onclick="window.open('https://drive.google.com/drive/folders/1XjpXLq40dpZurVS4NesaBRvp3_zAlgFl?usp=sharing');">REPOSITÓRIO NO GDRIVE</button></p>
                         <br />
-                            <p>blaze-advisor_7.5.7500.v11760_Windows (Blaze)</p>
                         <br />
-                            <p>Obs: novamente fique atento ao local onde o programa está sendo instalado. No meu caso, ele está na seguinte pasta: C:\Blaze. </p>
-                            <p>Criar uma pasta <strong>projetos</strong> em C:\Blaze e copiar(Desempacotar) o arquivo <strong>eclipse-jee-oxygen-3a-win32-x86_64.zip</strong> para dentro desta pasta.</p>
-                            <br />
-                            <p><img alt="Screenshot" src="../../img/blaze/02.png" /></p>
-                            <br />
-                            <p>Renomear a pasta <strong>eclipse-jee-oxygen-3a-win32-x86_64</strong> para <strong>eclipse01</strong> para facilitar a localização.        </p>
-                            <br />
-                            <p><img alt="Screenshot" src="../../img/blaze/04.png" /></p>
-                            <br />
-                            <p>Executar, com um duplo clique, o arquivo <strong>eclipse.exe</strong> que está dentro da pasta eclipse01 (pasta renomeada). </p>
-                            <br />
-                            <p><img alt="Screenshot" src="../../img/blaze/03.png" />       </p>
-                            <br />
-                            <p><strong>IMPORTANTE:</strong> escolher o workspace do eclipse. Você deverá escolher um workspace fácil de lembrar. 
-                            No meu caso, escolhi a própria pasta do eclipse. <strong>C:\Blaze\projetos\eclipse01\eclipse-workspace</strong></p>
-                            <p>Instalar o plug-in do Blaze: após abrir o eclipse e escolher o workspace, devemos preparar o eclipse para suportar o Blaze. </p>
+                        <br />
+                        <br />
+                        <!--  <p><img alt="Screenshot" src="../../images/blaze/01.png" /></p>-->
+                            <p>Instale o arquivo: <button onclick="window.open('https://marketplace.ficoanalyticcloud.com/apps/134263#!overview');">BLAZE PARA DOWNLOAD</button></p>
+                            <pre><code><p><strong>blaze-advisor_7.5.7500.v11760_Windows (Blaze)</strong></p></code></pre>
+                            <p>No meu caso, ele está na seguinte pasta: <strong>C:\Blaze.</strong></p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <p><strong>2)</strong> Criar uma pasta em <strong>C:\Blaze</strong> e copiar extrair o arquivo <strong>eclipse-jee-oxygen-3a-win32-x86_64.zip</strong> para dentro desta pasta.</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/02.png" /></p>-->
+                        <br />
+                            <p><strong>3)</strong>Renomear a pasta <strong>eclipse-jee-oxygen-3a-win32-x86_64</strong> para <strong>eclipse</strong> para facilitar a localização.</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/04.png" /></p>-->
+                        <br />
+                            <p><strong>4)</strong>Executar<strong> eclipse.exe</strong> que está dentro da pasta eclipse. </p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/03.png" />       </p>-->
+                        <br />
+                            <p><strong>Aviso:</strong> Escolher aonde ira ficar a pasta workspace do eclipse. </p>
+                            <p>No meu caso, escolhi a própria pasta do eclipse. </p>
+                            <pre><code><p><strong>C:\Blaze\projetos\eclipse01\eclipse-workspace</strong></p></code></pre>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <p><strong>5)</strong>Instalar o plug-in do Blaze: após abrir o eclipse e escolher o workspace, devemos preparar o eclipse para suportar o Blaze. </p>
                             <ul>
-                            <li>No eclipse, ir em: Help - Install new software.</li>
+                            <li>No eclipse, ir em: <strong>Help - Install new software.</strong></li>
                             </ul>
-                            <br />
-                            <p><img alt="Screenshot" src="../../img/blaze/05.png" /></p>
-                            <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/05.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Add - local.</li>
+                            <li><strong>Add - local.</strong></li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/06.png" /></p>
-                            <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/06.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Ir na pasta C:\Blaze\Advisor75\EclipsePluginUpdateSite </li>
+                            <li><strong>6)</strong>Ir na pasta <strong>C:\Blaze\Advisor75\EclipsePluginUpdateSite</strong> </li>
                             </ul>
-                            <br />
-                            <p><img alt="Screenshot" src="../../img/blaze/07.png" /></p>
-                            <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/07.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Depois de selecionar a pasta, digitar <strong>Blaze Advisor</strong> e clicar em ok.</li>
+                            <li><strong>7)</strong>Depois de selecionar a pasta, digitar <strong>Blaze Advisor</strong> e clicar em ok.</li>
                             </ul>
-                            <br />
-                            <p><img alt="Screenshot" src="../../img/blaze/08.png" /></p>
-                            <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/08.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Selecionar <strong>Blaze Adivisor</strong> e <strong>Blaze Advisor Optional</strong>. Ir clicando em next até terminar a instalação e reiniciar o eclipse. </li>
+                            <li><strong>8)</strong>Selecionar <strong>Blaze Adivisor</strong> e <strong>Blaze Advisor Optional</strong>. Ir clicando em next até terminar a instalação e reiniciar o eclipse. </li>
                             </ul>
-                            <br />
-                            <p><img alt="Screenshot" src="../../img/blaze/09.png" /></p>
-                            <br />
-                            <p>Para utilizar o plug-in do Blaze:</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/09.png" /></p>-->
+                        <br />
+                            <p><strong>Aviso:</strong> Para utilizar o plug-in do Blaze:</p>
                             <ul>
                             <li>
-                            <p>Ao reiniciar, o blaze irá pedir uma licença que pode ser adquirida com a FICO. <button onclick="window.open('https://marketplace.ficoanalyticcloud.com/apps/134263#!overview');">FICO</button></p>
+                            <p>Ao reiniciar, Colocar a licença do Blaze.</p>
+                            <p>Link para lincença: <button onclick="window.open('https://marketplace.ficoanalyticcloud.com/apps/134263#!overview');">FICO</button></p>
                             </li>
                             <li>
-                            <p>Após colocar a licença, basta ir em: Window - Perspective - Open Perspective - Other.</p>
+                            <p>Após colocar a licença:</p>
+                            <pre><code><p><strong>Window - Perspective - Open Perspective - Other.</strong></p></pre></code>
                             </li>
-                            </ub>
-                            <br />
-                            <p>bimg alt="Screenshot" src="../../img/blaze/10.png" /></p>
-                            <br b>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p>bimg alt="Screenshot" src="../../img/blaze/10.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>blaze Advisor - Open.</li>
+                            <li><strong>blaze Advisor - Open.</strong></li>
                             </ul>
-                            <br />
-                            <pb<img alt="Screenshot" src="../../img/blaze/11.png" /></p>
-                            <br />
-                            <hb id="criando-repositorio">Criando Repositório</h2>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/11.png" /></p>-->
+                        <br />
+                            <h3 id="criando-repositorio">Criando Repositório</h3>
                             <p>Todo nosso ambiente será preparado na pasta </p>
                             <blockquote>
-                            <p>C:\Blaze\projetos</p>
+                                <pre><code><p><strong>C:\Blaze\projetos</strong></p></code></pre>
                             </blockquote>
-                            <p>Crie uma pasta com o nome <str   ong>repositorio01</str ong> em C:\Blaze\projetos</p>
+                            <p><strong>1)</strong> Criar uma pasta com o nome escolhido para o seu repositorio em <strong>C:\Blaze\projetos</strong></p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/12.png" /></p>-->
                             <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/12.png" /></p>
-                            <hr />
-                            <p>O repositório no Blaze pode ser versionado ou não versionado. 
-                            Neste tutorial, iremos utilizar o sistema de versionamento do Blaze (bvs). 
-                            Este sistema de versionamento funciona com base em duas partes, uma denominada Central e outra Admin. 
-                            A parte central mantém um histórico de tudo que for feito no Blaze e a parte Admin é o usuário criado para gerenciar o repositório/projeto. </p>
-                            <p>Crie, dentro da pasta repositório, as seguintes pastas:</p>
+                            <p><strong>2)</strong>  Neste tutorial com exemplo, iremos utilizar o sistema de versionamento do Blaze (bvs) privado. </p>
+                            <p><strong>Aviso:</strong> Este sistema de versionamento funciona com base em duas partes, uma denominada Central e outra Admin. 
+                                A parte central mantém um histórico de tudo que for feito no Blaze e a parte Admin é o usuário criado para gerenciar o repositório/projeto. </p>
+                            <p>Crie dentro da pasta do seu repositorio, as seguintes pastas:</p>
                             <ul>
-                            <li>bvs-central</li>
-                            <li>bvs-admin </li>
-                            <li>workspaces</li>
+                            <pre><code>
+                            <li><strong>bvs-central</strong></li>
+                            <li><strong>bvs-admin</strong></li>
+                            <li><strong>Workspaces</strong></li>
+                            </code></pre>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/13.png" /></p>
-                            <hr />
-                            <p>Iniciando o repositório no eclipse:</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/13.png" /></p>-->
+                        <br />
+                            <p><strong>3)</strong>Iniciando o repositório no eclipse:</p>
                             <ul>
                             <li>
-                            <p>Após criar as pastas necessárias para o início do nosso projeto, iremos voltar ao eclipse e fazer o seguinte:</p>
+                            <p>Após criar as pastas necessárias volte ao projeto vá em:</p>
                             <ul>
-                            <li>Ir na aba Repository - New Repository [Novo Repositório] </li>
+                            <pre><code><li><strong>Repository - New Repository [Novo Repositório]</strong> </li></code></pre>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/14.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/14.png" /></p>-->
+                        <br />
                             <ul>
                             <li>
-                            <p>Escolher um nick name [Apelido] para o repositório. No meu caso escolhi: <strong>RepositorioCarro</strong></p>
+                            <p><strong>4)</strong>Escolher um [NOME] para o repositório. No meu caso: <strong>RepositorioLucas</strong></p>
                             </li>
                             <li>
-                            <p>Escolher um Repository Type [Tipo de Repositório]: repositório de Arquivos <strong>(Controle de Versão de BVS - Privado)</strong>.</p>
+                            <p>>Escolher um Repository Type [Tipo de Repositório]: repositório de Arquivos <strong>(Controle de Versão de BVS - Privado)</strong>.</p>
                             </li>
                             <li>
-                            <p>Ainda nesta janela, você deverá referenciar as pastas bvs-admin e bvs-central que você criou.</p>
+                            <p>>Ainda nesta janela, fazer referenciar as pastas bvs-admin e bvs-central que foi criada.</p>
                             </li>
                             <li>
-                            <p>Como nas imagens abaixo, você deverá referenciar a pasta bvs-central primeiro e logo abaixo referenciar a pasta bvs-admin.</p>
+                            <p>>Assim comom nas imagens abaixo, você deverá referenciar a pasta bvs-central primeiro em seguida a pasta bvs-admin.</p>
                             </li>
                             <li>
-                            <p>Colocar admin como usuário nas duas opções. Para este tutorial não será necessário utilizar senha. </p>
+                            <p>>Colocar admin como usuário nas duas opções. (Não é necessario a utilização de senha neste caso). </p>
                             </li>
                             </ul>
                             </li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/15.png" /></p>
-                            <hr />
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/16.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/15.png" /></p>-->
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/16.png" /></p>-->
+                        <br />
                             <h2 id="criando-um-projeto">Criando um projeto</h2>
-                            <p>Iremos trabalhar com um projeto dividido de acordo com a seguinte estrutura: </p>
+                            <p>A estrutura do nosso projeto será a seguinte: </p>
                             <pre><code>&gt; Technical - Business - Testing - Decision Services
                             </code></pre>
-                            <p>Cada parte será um subprojeto e terá funções específicas que serão discutidas mais a frente. </p>
-                            <p>Para iniciar, iremos criar a parte Technical do projeto:</p>
+                            <p>Cada parte será um subprojeto e terá funções específicas. </p>
+                            <p>Para iniciar, iremos criar a parte Technical do projeto na aba:</p>
                             <ul>
-                            <li>Ir na aba File - New - Project</li>
+                            <pre><code><li>File - New - Project</li></code></pre>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/17.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/17.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Blaze Advisor - Rule Project - Next </li>
+                            <pre><code><li>Blaze Advisor - Rule Project - Next </li></code></pre>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/18.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/18.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Escolher o repositório que criamos - next</li>
+                            <li>Escolher o repositório que criamos <strong>next</strong></li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/19.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/19.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Selecionar o repositório e colocar o nome do projeto: Technical Library</li>
+                            <li>Selecionar o repositório e colocar o nome do projeto: <strong>Technical Library</strong></li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/20.png" /></p>
-                            <hr />
-                            <ul>
-                            <li>Finish.</li>
-                            </ul>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/20.png" /></p>-->
+                        <br />
                             <h2 id="business-object-model-bom">Business Object Model (BOM)</h2>
-                            <p>Neste tutorial iremos utilizar um arquivo.jar para importar as classes e as variáveis que iremos utilizar. 
-                            Em um projeto Blaze você deve preparar com antecedência um rol de variáveis que irá trabalhar. 
-                            Neste projeto iremos trabalhar com as seguintes variáveis:</p>
-                            <hr />
+                            <p><strong>1)</strong> Será utilizado um arquivo.jar para importar as classes e as variáveis que será utilizado neste exemplo. </p>
+                            <p>Em seu projeto Blaze você deve preparar um rol de variáveis que irá trabalhar.</p>
+                            <p>Neste projeto iremos trabalhar com as seguintes variáveis:</p>
+                        <br />
                             <ul>
-                            <li>Variáveis de Entrada:<ul>
-                            <li>RENDA</li>
-                            <li>SEXO</li>
-                            <li>IDADE</li>
-                            <li>ESTADO_CIVIL</li>
-                            <li>NUMERO_CONDUTORES</li>
+                            <li><strong>Variáveis de Entrada:</strong><ul></ul>
+                            <pre><code><li>RENDA - SEXO - IDADE - ESTADO_CIVIL - NUMERO_CONDUTORES</li></code></pre>
                             </ul>
                             </li>
                             </ul>
-                            <hr />
-                            <ul>
-                            <li>Variáveis de Saída:<ul>
-                            <li>DIARIA</li>
-                            <li>VALOR_AUTOMOVEL</li>
-                            <li>VALOR_CAUCAO</li>
-                            <li>CLIENT_TYPE</li>
-                            <li>DECISION</li>
+                        <br />
+                        <ul>
+                            <li><strong>Variáveis de Saída:</strong><ul></ul>
+                            <pre><code><li>DIARIA - VALOR_AUTOMOVEL - VALOR_CAUCAO - CLIENT_TYPE - DECISION</li></code></pre>
                             </ul>
                             </li>
                             </ul>
-                            <hr />
-                            <p>Em um turorial à parte, ensino a criar um arquivo.jar e a modificar este arquivo para o seu projeto, conforme suas necessidades. Porém, para este tutorial, iremos utilizar um arquivo.jar pronto. </p>
-                            <hr />
+                        <br />
+                            <p>Em um tutorial à parte eu ensino você a como criar um <strong>arquivo.jar</strong>. Link parar o curso:</p>
+                            <p>Porém, nesse tutorial iremos utilizar um <strong>arquivo.jar</strong> pronto.</p>
+                        <br />
                             <ul>
                             <li>
-                            <p>Favor baixar o arquivo <strong>bom-Carro3.jar</strong> no drive:</p>
+                            <p><strong>2)</strong> o arquivo<strong> bom-Carro3.jar</strong> no drive:</p>
                             <ul>
-                            <li>Baixar o arquivo e colocar na pasta C:\Blaze\projetos.</li>
+                            <li>Baixar o arquivo e colocar na pasta:</li>
+                            <pre><code><li>C:\Blaze\projetos</li></code></pre>
                             </ul>
                             </li>
                             </ul>
-                            <hr />
+                        <br />
                             <ul>
                             <li>
-                            <p>Importando o BOM.jar no projeto (eclipse):</p>
+                            <p>Importando o <strong> BOM.jar</strong> no projeto <strongir>ir(ireclipse)</strong>ir na aba:</p>
                             <ul>
                             <li>
-                            <p>Ir na aba Window - Preferences</p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/21.png" /></p>
-                            <hr />
+                            <pre><code><p>Window - Preferences</p></code></pre>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/21.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Clicar em Blaze Advisor e ir em add library [Adicionar Biblioteca]. </p>
+                            <p><strong>3)</strong> Clicar em Blaze Advisor e ir em <strong>add library.</strong> </p>
                             </li>
                             <li>
-                            <p>Procurar pelo arquivo que salvamos na pasta projetos <strong>bom-Carro3.jar</strong></p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/22.png" /></p>
-                            <hr />
+                            <p>Procurar pelo arquivo que salvamos na pasta de projetos <strong>bom-Carro3.jar</strong></p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/22.png" /></p>-->
+                        <br />
                             </li>
                             <li>
                             <p>Após selecioado, o arquivo aparecerá na caixa de texto localizada no canto inferior esquerdo da tela. </p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/23.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/23.png" /></p>-->
+                        <br />
                             </li>
                             <li>
                             <p>Apply and Close.</p>
                             </li>
-                            </ul>
-                            </li>
-                            </ul>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                             <h2 id="usando-o-bom-carro3jar">Usando o bom-Carro3.jar</h2>
                             <ul>
                             <li>
-                            <p>Clicar com o botão direito do mouse sobre a pasta Technical Library.</p>
+                            <p><strong>1)</strong> Clicar com o botão direito do mouse sobre a pasta Technical Library.</p>
                             <ul>
                             <li>
-                            <p>New - Folder [Pasta].</p>
+                            <pre><code><p>New - Folder [Pasta].</p></code></pre>
                             </li>
                             <li>
-                            <p>Dar o nome de BOM.</p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/24.png" /></p>
-                            <hr />
+                            <p>Colocar o nome de [BOM].</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/24.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Clicar com o botão direito do mouse sobre a pasta BOM.</p>
+                            <p><strong>2)</strong> Clicar com o botão direito do mouse sobre a pasta BOM.</p>
                             </li>
                             <li>
-                            <p>New - Business Object Model - Modelo Java</p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/25.png" /></p>
-                            <hr />
+                            <pre><code><p>New - Business Object Model - Modelo Java</p></code></pre>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/25.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Selecionar a classe input e adicionar [Add]. </p>
+                            <p><strong>3)</strong> Selecionar as pastas:</p>
                             </li>
                             <li>
-                            <p>Selecionar a classe output e adicionar [Add]. </p>
+                            <p>A classe input e adicionar [Add]. </p>
                             </li>
                             <li>
-                            <p>next - Finish[Concluir]. </p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/26.png" /></p>
-                            <hr />
+                            <p>A classe output e adicionar [Add]. </p>
                             </li>
                             <li>
-                            <p>Nota-se que dentro da pasta BOM, no editor eclipse, foi criado um arquivo [Java]. Podemos renomeá-lo para <strong>JavaBOM</strong> para facilitar nossa compreensão. </p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/27.png" /></p>
-                            <hr />
+                            <pre><code><p>next - Finish. </p></code></pre>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/26.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Clicar com o botão direito do mouse sobre a pasta BOM.</p>
+                            <p><strong>Aviso:</strong> Dentro da pasta BOM, no editor eclipse, foi criado um arquivo [Java]. Podemos renomeá-lo para <strong>JavaBOM</strong> para facilitar nossa compreensão. </p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/27.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Team - Check-in.</p>
+                            <p><strong>4)</strong>Clicar com o botão direito do mouse sobre a pasta <strong>BOM.</strong></p>
                             </li>
                             <li>
-                            <p>Adicionar um comentário e fazer o Check-in.</p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/28.png" /></p>
-                            <hr />
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/29.png" /></p>
-                            <hr />
+                            <pre><code><p>Team - Check-in.</p></code></pre>
+                            </li>
+                            <li>
+                            <p>Adicionar um comentário e fazer o <strong>Check-in.</strong></p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/28.png" /></p>-->
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/29.png" /></p>-->
+                        <br />
                             </li>
                             </ul>
                             </li>
                             </ul>
-                            <p>Obs: o tempo todo iremos utilizar as funções Check-in e Check-out.</p>
+                            <p><strong>Aviso:</strong> A todo momento iremos utilizar as funções <strong>Check-in e Check-out.</strong></p>
                             <blockquote>
+                            <pre><code>
                             <p><strong>Check-in:</strong>  pode ser entendido como [SALVAR]</p>
                             <p><strong>Check-out:</strong>  pode ser entendido como [EDITAR]</p>
+                            </code></pre>
                             </blockquote>
-                            <h2 id="criando-projetos-partes">Criando Projetos [Partes]</h2>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <h2 id="criando-projetos-partes">Criação do Projeto</h2>
                             <ul>
-                            <li>Business Library<ul>
-                            <li>File - New - Project - Blaze Advisor - Rule Project - Next - RepositorioCarro - Next - RepositorioCarro - name: Business Library - Finish.</li>
+                        <br />
+                            <li>Business Library:</li>
                             </ul>
-                            </li>
-                            </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/30.png" /></p>
-                            <hr />
                             <ul>
-                            <li>Testing<ul>
-                            <li>File - New - Project - Blaze Advisor - Rule Project - Next - RepositorioCarro - Next - RepositorioCarro - name: Testing - Finish.</li>
+                            <pre><code><li>File - New - Project - Blaze Advisor - Rule Project - Next - RepositorioCarro - Next - RepositorioCarro - name: Business Library - Finish.</li></code></pre>
                             </ul>
-                            </li>
-                            </ul>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/30.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Decision Services<ul>
-                            <li>Obs: a pasta Decision Services irá ganhar o nome [RegrasAluguelCarros] para tornar o projeto mais intuitivo e facilitar a identificação.  </li>
-                            <li>File - New - Project - Blaze Advisor - Rule Project - Next - RepositorioCarro - Next - RepositorioCarro - name: RegrasAluguelCarros - Finish.</li>
+                            <li>Testing:</li>
                             </ul>
-                            </li>
+                            <pre><code><li>File - New - Project - Blaze Advisor - Rule Project - Next - RepositorioCarro - Next - RepositorioCarro - name: Testing - Finish.</li></code></pre>
                             </ul>
-                            <hr />
-                            <p>Após criar os projetos nosso eclipse ficará assim:</p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/31.png" /></p>
-                            <hr />
+                        <br />
+                            <ul>
+                            <li>Decision Services:</li>
+                            </ul>
+                            <li><strong>Aviso:</strong> A pasta Decision Services irá receber um nome [Regras...] para tornar o projeto mais intuitivo e facilitar a identificação.  </li>
+                            <pre><code><li>File - New - Project - Blaze Advisor - Rule Project - Next - RepositorioCarro - Next - RepositorioCarro - name: RegrasAluguelCarros - Finish.</li></ul></code></pre>
+                        <br />
+                            <p>O projeto ficará assim:</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/31.png" /></p>-->
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                             <h2 id="conectando-os-projetos">Conectando os Projetos</h2>
-                            <p>Para conectar todos os projetos em apenas um, basta fazer o seguinte:</p>
+                            <p>Para conectar todos os projetos faça o seguinte:</p>
                             <ul>
                             <li>
-                            <p>Clicar com o botão direito do mouse sobre o projeto RegrasAluguelCarros - open project editor [Abrir Editor de Projetos]</p>
+                            <p><strong>1)</strong> Clicar com o botão direito do mouse sobre o projeto [Regras...] e:</p>
+                            <pre><code>open project editor</p></code></pre>
                             <ul>
                             <li>
-                            <p>Na área de edição do projeto, clicar no ícone, como mostrado na imagem a seguir:</p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/32.png" /></p>
-                            <hr />
+                            <p>Na área de edição do projeto, clicar no ícone, como mostra na imagem a seguir:</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/32.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Incluir os projetos Business Library e Technical</p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/33.png" /></p>
-                            <hr />
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/34.png" /></p>
-                            <hr />
+                            <p>Incluir os projetos  <strong>Business Library e Technical</strong></p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/33.png" /></p>-->
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/34.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Clicar no ícone Salvar, na barra superior e fazer o Check-in clicando com o botão direito sobre o projeto RegrasAluguelCarros e indo na opção team. </p>
+                            <p><strong>2)</strong> Clicar no ícone Salvar, na barra superior e fazer o Check-in clicando com o botão direito sobre o projeto [Regras...] e indo na opção (team). </p>
                             </li>
                             <li>
-                            <p>Nota-se que agora os projetos estão conectados com o projeto RegrasAluguelCarros. </p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/35.png" /></p>
-                            <hr />
+                            <p><strong>Aviso:</strong> Agora os projetos estão conectados com o  seu projeto [Regras...]. </p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/35.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Agora podemos fechar os projetos que estão conectados ao projeto principal, pois qualquer alteração feita no projeto principal será recursiva nos projetos que estarão fechados. </p>
+                            <p><strong>3)</strong> Agora podemos fechar os projetos que estão conectados ao projeto principal.</p>
                             </li>
                             <li>
-                            <p>Para fechar os projetos conectados ao principal basta clicar com o botão direito do mouse sobre o projeto que deseja fechar e ir na opção Close Project.
-                            Obs: fechar todos os projetos, deixar somente o RegrasAluguelCarros aberto. </p>
+                            <p>Para fechar os projetos conectados ao principal basta clicar com o botão direito do mouse sobre o projeto que deseja fechar e ir na opção Close Project.</p>
+                            <p><strong>Aviso:</strong> Fechar todos os projetos, deixar somente o [Regras...]. </p>
                             </li>
                             <li>
-                            <p>Após fechar os projetos, clicar com o botão direito sobre o projeto RegrasAluguelCarros e fazer o check-in.</p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/36.png" /></p>
-                            <hr />
-                            </li>
-                            </ul>
-                            </li>
-                            </ul>
+                            <p>Fazer Check-in em [Regras...].</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/36.png" /></p>-->
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                             <h2 id="rma-rule-maintenance-application">RMA [Rule Maintenance Application]</h2>
                             <p>Antes de iniciar as configurações, vá em:</p>
                             <blockquote>
-                            <p>C:\Blaze\projetos e crie um pasta chamada adb.</p>
+                            <pre><code><p>C:\Blaze\projetos e crie um pasta chamada adb.</p></code></pre>
                             </blockquote>
+                            <p><strong>1)</strong> Criar uma pasta com o nome de Deploy dentro do projeto Technical. Clicar com o botão direito sobre a pasta Technical dentro do projeto principal [Regras...].</p>
                             <ul>
-                            <li>
-                            <p>Configurações de Deploy Inicial</p>
-                            <ul>
-                            <li>
-                            <p>Criar uma pasta com o nome de Deploy dentro do projeto Technical. Clicar com o botão direito sobre a pasta Technical dentro do projeto principal [RegrasAluguelCarros].</p>
-                            <ul>
-                            <li>New - Folder - Name: Deploy. </li>
+                            <pre><code><li>New - Folder - Name: Deploy. </li></code></pre>
                             </ul>
-                            <hr />
+                        <br />
                             </li>
                             <li>
-                            <p>Clicar com o botão direito do mouse sobre a pasta criada [Deploy]. </p>
+                            <p><strong>2)</strong>Clicar com o botão direito do mouse sobre a pasta criada [Deploy]. </p>
                             <ul>
-                            <li>New - Deployment Entities - Rule Maintenance Application Definition - Entity Name: RMADefinition - Finish.</li>
+                            <pre><code><li>New - Deployment Entities - Rule Maintenance Application Definition - Entity Name: RMADefinition - Finish.</li></code></pre>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/37.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/37.png" /></p>-->
+                        <br />
                             </li>
                             </ul>
                             </li>
                             <li>
-                            <p>Na aba RMADefinition: </p>
+                            <p><strong>3)</strong> Na aba RMADefinition: </p>
                             <ul>
                             <li>
-                            <p>Application Title [Título do Aplicativo]: Regras de Aluguel de Carros</p>
+                            <pre><code><p>Application Title [Título do Aplicativo]: Regras de Aluguel de Carros</p></code></pre>
                             </li>
                             <li>
                             <p>Habilitar as seguintes opções:</p>
                             <ul>
-                            <li>Download Rules Command</li>
+                            <pre><code><li>Download Rules Command</li></code></pre>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/38.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/38.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Ir na aba navigate [Navegação], escolher as pastas que irão aparecer no RMA. As pastas que não vão aparecer devem ficar do lado direito. </li>
+                            <li><strong>4)</strong>Ir na aba <strong>navigate</strong>, escolher as pastas que irão aparecer no RMA. As pastas que não vão aparecer devem ficar do lado direito. </li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/39.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/39.png" /></p>-->
+                        <br />
                             <ul>
                             <li>
-                            <p>Ir na aba applets e marcar as opções:</p>
+                            <p><strong>5)</strong>Ir na aba <strong>applets</strong> e marcar as opções:</p>
                             <ul>
-                            <li>Allow Editing of Table Name.</li>
-                            <li>Display Branch Condition.</li>
+                            <pre><code><li>Allow Editing of Table Name.</li>
+                            <li>Display Branch Condition.</li></code></pre>
                             </ul>
                             </li>
                             <li>
-                            <p>Ir na aba Life Cycle Management, marcar todas as opções e referenciar a pasta adb criada no início deste tópico, como mostra a imagem a seguir.</p>
+                            <p><strong>6)</strong> Ir na aba <strong>Life Cycle Management</strong>, marcar todas as opções e referenciar a pasta adb criada no início deste tópico, como mostra a imagem a seguir:</p>
                             </li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/40.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/40.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Ir no ícone SALVAR ALL na barra superior do eclipse e fazer o check-in clicando com o botão direito sobre o arquivo RMADefinition que está dentro da pasta Deploy. </li>
+                            <li><strong>7)</strong> Ir no ícone <strong>SALVAR ALL</strong> na barra superior do eclipse e fazer o check-in clicando com o botão direito sobre o arquivo RMADefinition que está dentro da pasta Deploy. </li>
                             </ul>
                             </li>
                             </ul>
                             </li>
                             </ul>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                             <h2 id="funcao-entrypoint">Função EntryPoint</h2>
-                            <p>Criando uma função que irá "startar" o uso do fluxo de decisão no nosso RMA.</p>
                             <ul>
                             <li>
-                            <p>No eclipse, clicar com o botão direito do mouse sobre a pasta Technical Library - New - Folder - Name: Entrypoint.</p>
+                            <p><strong>1)</strong>No eclipse, clicar com o botão direito do mouse sobre a pasta:</p>
+                            <pre><code><p>Technical Library - New - Folder - Name: Entrypoint.</p></code></pre>
                             </li>
                             <li>
-                            <p>Clicar com o botão direito do mouse sobre a pasta Entrypoint - New - SRL Decision Entities - Function - Name: entrypoint - Finish.</p>
+                            <p><strong>2)</strong>Clicar com o botão direito do mouse sobre a pasta:</p>
+                            <pre><code><p>Entrypoint - New - SRL Decision Entities - Function - Name: entrypoint - Finish.</p></code></pre>
                             <ul>
-                            <li>Name: entrypoint</li>
-                            <li>Type: Decisioninput</li>
+                            <pre><code><li>Name: entrypoint</li>
+                            <li>Type: Decisioninput</li></code></pre>
                             <li>Criar um parâmetro e o corpo de uma função.</li>
                             </ul>
                             </li>
                             <li>
-                            <p>Obs: faça como na imagem a seguir:</p>
+                            <p><strong>Aviso:</strong> Faça como na imagem a seguir:</p>
                             </li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/41.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/41.png" /></p>-->
+                        <br />
                             <ul>
-                            <li>Ir no ícone SALVAR e fazer o check-in neste arquivo. </li>
+                            <li><strong>3)</strong> Ir no ícone SALVAR e fazer o check-in neste arquivo. </li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/42.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/42.png" /></p>-->
+                        <br />
                             <h2 id="variavel-global-input">Variavel Global Input</h2>
                             <p>Criando uma variável global input. </p>
                             <ul>
                             <li>
-                            <p>No eclipse, clicar com o botão direito sobre a pasta Technical [Lembrando que esta pasta está dentro de RegrasAluguelCarros].</p>
+                            <p><strong>1)</strong> Clicar com o botão direito sobre a pasta <strong>Technical</strong></p>
                             </li>
                             <li>
-                            <p>New - Object Model Entities - Variable</p>
+                            <pre><code><p>New - Object Model Entities - Variable</p></code></pre>
                             <ul>
                             <li>Nome: input</li>
-                            </ul>
-                            </li>
-                            <li>
-                            <p>Na tela de edição da variável:</p>
-                            <ul>
                             <li>Type: DecisionInput</li>
-                            </ul>
-                            </li>
-                            <li>
-                            <p>Fazer check-in.</p>
-                            </li>
-                            </ul>
-                            <h2 id="gerar-rma-embarcado">Gerar RMA [Embarcado]</h2>
+                            <p><strong>Fazer check-in.</strong></p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <h2 id="gerar-rma-embarcado">Gerar RMA</h2>
                             <ul>
                             <li>
-                            <p>Clicar no projeto principal [RegrasAluguelCarros] e ir em:</p>
-                            <ul>
+                            <p><strong>1)</strong>Clicar no projeto principal [Regras...] e ir em:</p>
+                            <p>
                             <li>
-                            <p>Project - Rule Maintenance Application - Generate Rule Maintenance Application.</p>
+                            <pre><code><p>Project - Rule Maintenance Application - Generate Rule Maintenance Application.</p></code></pre>
                             </li>
                             <li>
                             <p>Este comando irá abrir uma janela pop-up chamada Gerador de Aplicativo.</p>
                             </li>
                             <li>
-                            <p>Nota-se que o Blaze (eclipse) já reconhece o arquivo de configurações que criamos, o RMADefinition. Este arquivo configura o deploy do projeto para o RMA WEB.</p>
-                            </li>
-                            <li>
-                            <p>Podemos observar também que o Blaze já reconheceu a pasta workspaces que criamos no início deste tutorial, no tópico [Criando Repositório].</p>
+                            <p><strong>Aviso:</strong> O Blaze (eclipse) já reconhece o arquivo de configurações que criamos, o RMADefinition. Este arquivo configura o deploy do projeto para o RMA WEB.</p>
                             </li>
                             <li>
                             <p>Deixar a opção de Deploy como: </p>
                             <ul>
-                            <li>Web Application.</li>
+                            <li><strong>Web Application.</strong></li>
                             </ul>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/43.png" /></p>
-                            <hr />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/43.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>Ao clicar em next, devemos selecionar o arquivo <strong>bom-Carro3.jar</strong> que criamos e anexamos ao nosso projeto e, por fim, clicar em concluir. </p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/44.png" /></p>
-                            <hr />
+                            <p><strong>2)</strong> Clicar em next, devemos selecionar o arquivo <strong>bom-Carro3.jar</strong> que criamos e anexamos ao nosso projeto e, por fim, clicar em concluir. </p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/44.png" /></p>-->
+                        <br />
                             </li>
                             <li>
-                            <p>O RMA irá abrir automaticamente no navegador Internet Explorer e irá utilizar o local host [http://127.0.0.1:8080] para gerar a interface. </p>
-                            </li>
-                            <li>
-                            <p>A sugestão é que você copie o link e cole em um navegador mais moderno e atualizado.</p>
+                            <p>O RMA irá abrir automaticamente no navegador Internet Explorer e irá utilizar o local host [http://127.0.0.1:8080] para gerar a interface.</p> 
+                            <p><strong>Aviso:</strong> Você pode copiar o link e trocar de navegador. </p>
                             </li>
                             <li>
                             <p>Se você seguiu todos os passos até aqui, basta digitar <strong>admin</strong> e <strong>admin</strong> na senha para que você acesse a interface do RMA. </p>
                             </li>
                             <li>
-                            <p>Clicando sobre o projeto, você estará na interface do RMA. </p>
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/45.png" /></p>
-                            <hr />
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/46.png" /></p>
-                            <hr />
-                            <hr />
-                            <p><img alt="Screenshot" src="../../img/blaze/47.png" /></p>
-                            <hr />
+                            <p>Você acaba de acessar o RMA. </p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/45.png" /></p>-->
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/46.png" /></p>-->
+                        <br />
+                        <br />
+                            <!--<p><img alt="Screenshot" src="../../img/blaze/47.png" /></p>-->
+                        <br />
                             </li>
                             </ul>
                             </li>
                             </ul>
-                            <h2 id="mais-utoriais-blaze">Mais utoriais - Blaze</h2>
+                            <h2 id="mais-utoriais-blaze">Mais Tutoriais - Blaze</h2>
                             <ul>
                             <li>
-                            <p>2 Utilizando o RMA - <button onclick="window.open('https://jonathan-geo.github.io/mkdocs/BLAZE/blaze02/');">Blaze - Utilização</button></p>
+                            <p>2º Etapa - Utilizando o RMA : <button onclick="window.open('https://jonathan-geo.github.io/mkdocs/BLAZE/blaze02/');">2º Capitulo</button></p>
                             </li>
                             <li>
-                            <p>3 Deploy no Tomcat - <button onclick="window.open('https://jonathan-geo.github.io/mkdocs/BLAZE/blaze02/');">Blaze - Deploy</button></p>
+                            <p>3º Etapa - Deploy no Tomcat : <button onclick="window.open('https://jonathan-geo.github.io/mkdocs/BLAZE/blaze02/');">3º Capitulo</button></p>
                             </li>
                             <li>
-                            <p>4 Tópicos Avançados - Em construção</p>
+                            <p>4º Etapa - Avançado - <strong>Em construção</strong></p>
                             </li>
                             </ul>
-                            <p>Elaborado por:
-                            <br/>
-                            Jonathan Cardoso Lopes Domingos
-                            <br/>
-                            21/10/2019</p></div>
                     </div>
 						
 					</div>
@@ -648,6 +882,9 @@
 			
 			<!--Rodapé-->
 			<footer>
+                <br/>
+                <p>Este curso foi realizado por:</p>
+                <p>Lucas Cezarei Magalhães</p>
 				<div class="logo-rodape">
 					<img src="images/logo.png">
 					<p>@LucasCezarei 2019 Todos os Direitos Reservados</p>
