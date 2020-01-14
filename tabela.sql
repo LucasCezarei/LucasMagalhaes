@@ -6,7 +6,7 @@ CREATE TABLE salario
     codigo int(11) auto_increment not null,
     nome varchar(50) not null,
     setor varchar(30) not null,
-    salario integer(100) not null,
+    pagamento integer(100) not null,
     primary key (codigo)
     );
     
