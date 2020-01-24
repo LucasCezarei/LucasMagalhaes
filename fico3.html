@@ -55,21 +55,6 @@
 			<main>
 				<section class="sobre">
 					<div class="container">	
-                        <center><p>Etapa 3º</p></center>
-                        <center><img src="images/fico.png">
-                        <li class="active">
-                            <a href="fico.html">Blaze - Instalações</a>
-                        </li>                          
-                        <li >
-                            <a href="fico2.html">Blaze - Utilização</a>
-                        </li>
-                                                            
-                        <li >
-                            <a href="fico3.html">Blaze - Deploy</a>
-                        </li>
-                        </center>
-                        <br />
-        <!--Final Apresentação-->
 
                         <!--Inicio do Conteudo-->
                             <center><h1 id="deploy-toncat7">Deploy Toncat7</h1>
@@ -109,7 +94,7 @@
                             <center>
                                                 <p><img alt="Screenshot" src="images/ficoimg/85.png" /><br />
                                                 <p><img alt="Screenshot" src="images/ficoimg/86.png" /></p><br />
-                                <h2 id="gerar-um-war-eclipse">Gerar um .WAR [Eclipse]</h2>
+                                <h1 id="gerar-um-war-eclipse">Gerar um .WAR [Eclipse]</h1>
                             </center>
                                     <br />
                                         <p><strong>6)</strong> Gerar um arquivo WAR(Web Application Archive). Arquivo que permite a aplicação web do projeto.</p>
@@ -137,7 +122,7 @@
                                         <p><strong>12)</strong> Clicar com o botão direito do mouse e <strong>(Close Project).</strong> </p></br>
                             <center>
                                         <p><img alt="Screenshot" src="images/ficoimg/90.png" /></p><br />
-                            <h2 id="executar-o-projeto-war-toncat7">Executar o projeto .WAR [Toncat7]</h2>
+                            <h1 id="executar-o-projeto-war-toncat7">Executar o projeto .WAR [Toncat7]</h1>
                                     <br />
                             </center>
                                         <p><strong>13)</strong> Executar, no tomcat, o projeto <strong>RegrasRMA.war</strong>.</p>
@@ -162,7 +147,7 @@
                             </center>
                             
                             <center>
-                                        <h2 id="deploy-rule-server-configuracoes">Deploy [Rule Server] - Configurações</h2>
+                                        <h1 id="deploy-rule-server-configuracoes">Deploy [Rule Server] - Configurações</h1>
                                             <br />
                                         <pre><code><p>Iremos gerar um Deploy de serviço de regras, isto é, iremos gerar uma aplicação pronta para ser executada. </p></code></pre>
                             </center>
@@ -204,7 +189,7 @@
                                         <li>Em Fornecedor, escolha a opção <strong>Tomcat8 and later</strong>.</li><br />
                                         <p><img alt="Screenshot" src="images/ficoimg/104.png" /></p><br />
                                         <li>Salvar e fazer o Check-in.</li><br />
-                            <h2 id="deploy-rule-server-gerando-arquivos">Deploy [Rule Server] - Gerando Arquivos</h2>
+                            <h1 id="deploy-rule-server-gerando-arquivos">Deploy [Rule Server] - Gerando Arquivos</h1>
                                     <br />
                                         <pre><code><p>Copiar o caminho da pasta ruleserver que você criou. No meu caso, a pasta está em: C:\Blaze\projetos\ruleserver.</p></code></pre>
                             </center>
@@ -224,7 +209,7 @@
                                         <li>Ao abrir a pasta ruleserver, você poderá observar alguns arquivos lá. </li><br />
                                             <p><img alt="Screenshot" src="images/ficoimg/108.png" /></p><br />
                                         <li>O arquivo DeploymentDocumentation.html é uma documentação que guia o processo de deploy. </li><br />
-                                <h2 id="deploy-rule-server">Deploy [Rule Server]</h2>
+                                <h1 id="deploy-rule-server">Deploy [Rule Server]</h1>
                                     <br />
                                             <pre><code><p>Agora iremos configurar alguns arquivos que foram gerados pelo processo anterior, na pasta Server. Lembrando que esta pasta se encontra dentro da pasta ruleserver. </p></code></pre>
                                             <p><img alt="Screenshot" src="images/ficoimg/109.png" /></p><br />
@@ -276,7 +261,7 @@
                                             <p>Este comando irá gerar uma série de arquivos, inclusive um arquivo.war dentro da pasta C:\Blaze\projetos\ruleserver\server\build. Para este projeto, o nome do arquivo ficou como: <strong>DefinicaoDoServicoDeRegrasServer.war</strong></p>
                                             <li>Este .war é o nosso ruleserver. Ele que vai gerar um up server no tomcat. </li>                        
                                             <li>Fechar o cmd.</li>
-                                    <h2 id="gerando-uma-aplicacao-toncat">Gerando uma aplicação Toncat</h2>
+                                    <h1 id="gerando-uma-aplicacao-toncat">Gerando uma aplicação Toncat</h1>
                                     <br />
                                             <pre><code><p>Startar o Toncat7 pelo arquivo <strong>startServer.bat</strong> (dando um duplo clique) que está na pasta <strong>C:\Blaze\projetos\tomcat7</strong></p></code></pre><br />
                                             <p><img alt="Screenshot" src="images/ficoimg/118.png" /></p><br />
@@ -302,7 +287,7 @@
                                             </blockquote>
                                             <p>Sua aplicação retornará um XML assim:</p>
                                                 <p><img alt="Screenshot" src="images/ficoimg/122.png" /></p><br />
-                                <h2 id="testando-a-aplicacao-no-soapui">Testando a Aplicação no SoapUI</h2>
+                                <h1 id="testando-a-aplicacao-no-soapui">Testando a Aplicação no SoapUI</h1>
                                     <br />
                                             <pre><code><p>Criar uma pasta [workspaceSoap] dentro da pasta Projetos.</p></code></pre><br /> 
                                             <p><img alt="Screenshot" src="images/ficoimg/125.png" /></p>
@@ -335,7 +320,7 @@
                                             <li> Clicando no arquivo: entrypoint/Request1 teremos uma comunicação com a aplicação. Basta digitar os dados do cliente no lugar das interrogações (?) e teremos o output dos dados inseridos. </li>
                                             <li> Para isso, basta digitar os dados e ir no ícone Rodar.</li><br />
                                             <p><img alt="Screenshot" src="images/ficoimg/130.png" /></p><br />
-                                    <h2 id="consideracoes-finais">Considerações finais</h2>
+                                    <h1 id="consideracoes-finais">Considerações finais</h1>
                                         <br />
                                         <p>Como você podê ver, nossa aplicação é bem simples e apresenta várias inconsistências como, por exemplo, possuir dados que não estão sendo utilizados. 
                                             Mas nosso objetivo era apenas introduzir o Blaze. </p>
@@ -348,7 +333,7 @@
                         <!--Finalizado Conteudo-->
                                             
                         <!--Conteudo Extra-->
-                            <pre><code><h2 id="mais-utoriais-blaze">Mais Tutoriais - Blaze</h2>
+                            <pre><code><h1 id="mais-utoriais-blaze">Mais Tutoriais - Blaze</h1>
                             <p>2º Etapa - Utilizando o RMA : <button onclick="window.open('fico2.html');">2º Capitulo</button></p>
                             <p>3º Etapa - Deploy no Tomcat : <button onclick="window.open('fico3.html');">3º Capitulo</button></p>
                             <p>4º Etapa - Avançado - <strong>Em construção</strong></p></code></pre>
