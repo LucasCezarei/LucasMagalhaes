@@ -46,7 +46,7 @@
 						<!--Finalizado Barra de navegação-->
 				
 					<h1><strong>Blaze Advisor</strong></h1>
-					<p>Material</p>
+					
 			</div>
 			</header>
 		<!--Finalizado Cabeçalho-->
@@ -55,6 +55,7 @@
 			<main>
 				<section class="sobre">
 					<div class="container">	
+                        <center><p>Etapa 3º</p></center>
                         <center><img src="images/fico.png">
                         <li class="active">
                             <a href="fico.html">Blaze - Instalações</a>
@@ -71,224 +72,279 @@
         <!--Final Apresentação-->
 
                         <!--Inicio do Conteudo-->
-                            <center><h1 id="deploy-toncat7">Deploy Toncat7</h1></center>
+                            <center><h1 id="deploy-toncat7">Deploy Toncat7</h1>
                                     <br />
-                                        <pre><code><p><center>Observação: Os arquivos para instalação estão no seguinte repositório: <button onclick="window.open('https://drive.google.com/drive/folders/1XjpXLq40dpZurVS4NesaBRvp3_zAlgFl?usp=sharing');">REPOSITÓRIO</center></button></p></pre></code>
+                                        <pre><code><p>Observação: Os arquivos para instalação estão no seguinte repositório: <button onclick="window.open('https://drive.google.com/drive/folders/1XjpXLq40dpZurVS4NesaBRvp3_zAlgFl?usp=sharing');">REPOSITÓRIO</button></p></pre></code>
                                         <br />
                                         <p>Você precisará fazer o download de um arquivo <strong>.ZIP</strong> que está dentro do drive.</p>
                                         <blockquote>
                                             <pre><code><p>Nome do arquivo: TOMCAT7.ZIP</p></code></pre>
                                         </blockquote>
+                            </center>
                                         <p><strong>1)</strong> Descompacte os arquivos dentro da pasta <strong>C:\Blaze\projetos.</strong> Os arquivos deverá ficar da seguinte forma:</p>
+                            <center>          
                                         <blockquote>
                                             <pre><code><p>C:\Blaze\projetos\tomcat7</p></code></pre>
                                         </blockquote>
-                                        <center><p><img alt="Screenshot" src="images/ficoimg/82.png" /></p><br /></center>
-                            <center><h1 id="configurando-o-startserverbat">Configurando o StartServer.bat</h1></center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/82.png" /></p><br />
+                                <h1 id="configurando-o-startserverbat">Configurando o StartServer.bat</h1>
                                     <br />
-                                        <pre><code><p><center>Observação: O arquivo startServer.bat serve para facilitar o serviço do deploy no tomcar</center></button></p></pre></code>
+                                        <pre><code><p>Observação: O arquivo startServer.bat serve para facilitar o serviço do deploy no tomcar</button></p></pre></code>
                                         <br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/83.png" /></p><br /></center>
+                                            <p><img alt="Screenshot" src="images/ficoimg/83.png" /></p><br />
+                            </center>
                                         <p><strong>2)</strong> O comando <strong>set JAVA_HOME=C:\Progra~1\Java\jdk1.8.0_211</strong> deve estar apontando para o jdk do seu computador. No meu caso ele se encontra em: <strong>C:\Program Files\Java\jdk1.8.0_221</strong>.</p>
                                         <p><strong>3)</strong> Substitu-a o endereço do StartServer.</p>
+                            <center>            
                                         <p> O comando <strong>set CATALINA_HOME=C:\Blaze\training\tomcat7</strong> também deve ser alterado. Ele deve estar apontando para a pasta <strong>tomcat7</strong> que você acabou de descompactar na pasta projetos. </p>
                                         <pre><code><p>Observação: A pasta do TOMCAT7 pode estar dentro de outra pasta TOMCAT7, depende do modo que foi descompatada</p></code></pre>
+                            </center>            
                                         <p><strong>4)</strong> Substituir o endereço no arquivo StartServer.</p>
+                            <center>
                                         <pre><code><p>Observação: O comando <strong>star C:\Blaze\training\tomcat7\bin\startup.bat</strong>deverá está referenciado corretamente.</p></code></pre>
                                         <p>A imagem a seguir mostra como ficaram as alterações:</p><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/84.png" /></p><br /></center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/84.png" /></p><br />
+                            </center>
                                         <p><strong>5)</strong> Após as alterações de endereço, dê um duplo clique sobre o arquivo startServer e o tomcat7 irá rodar no <strong>http://localhost:8081/</strong> </p>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/85.png" /><br /></center>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/86.png" /></p><br /></center>
-                            <center><h2 id="gerar-um-war-eclipse">Gerar um .WAR [Eclipse]</h2></center>
+                            <center>
+                                                <p><img alt="Screenshot" src="images/ficoimg/85.png" /><br />
+                                                <p><img alt="Screenshot" src="images/ficoimg/86.png" /></p><br />
+                                <h2 id="gerar-um-war-eclipse">Gerar um .WAR [Eclipse]</h2>
+                            </center>
                                     <br />
                                         <p><strong>6)</strong> Gerar um arquivo WAR(Web Application Archive). Arquivo que permite a aplicação web do projeto.</p>
+                            <center>           
                                         <p>Primeiro deve-se criar uma pasta chamada RMA dentro da pasta <strong>Projetos</strong></p><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/87.png" /></p><br /><br /></center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/87.png" /></p><br /><br />
+                            </center>
                                         <p><strong>7)</strong>Abra o eclipse e selecione o projeto <strong>(REGRAS....)</strong></p>
                                         <p><strong>8)</strong>vá na aba <strong>Project</strong> e clique em <strong>Generate Rule Maintenance Application</strong></p>
                                         <p><strong>9)</strong>Mude o RMA para <strong>Eclipse Web Project and WAR</strong></p>
                                         <p><strong>10)</strong>Eclipse Web Project Name: <strong>strRegrasRMA</strong></p>
+                            <center>
                                             <li>Marcar a opção: <strong>Generate War.</strong></li><br />
                                         <p>No caminho do War:</p>
                                             <li>War File Location:</li><br />
+                            </center>
                                         <p><strong>11)</strong> Na pasta RMA que criamos. Ex: <strong>C:\Blaze\projetos\rma.</strong></p>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/88.png" /></p><br /></center>
-                                            <center><p><pre><code>next - Selecionar o projeto - Next - Selecionar o .jar - Finish.</pre></code></p><br /></center>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/88.png" /></p><br /></center>
+                            <center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/88.png" /></p><br />
+                                        <p><pre><code>next - Selecionar o projeto - Next - Selecionar o .jar - Finish.</pre></code></p><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/88.png" /></p><br />
                                         <p>No Eclipse irá gerar um arquivo [<strong>RegrasRMA.war</strong>] na sua pasta RMA.</p><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/89.png" /></p><br /></center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/89.png" /></p><br />
+                            </center>
                                         <p><strong>12)</strong> Clicar com o botão direito do mouse e <strong>(Close Project).</strong> </p></br>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/90.png" /></p><br /></center>
-                            <center><h2 id="executar-o-projeto-war-toncat7">Executar o projeto .WAR [Toncat7]</h2></center>
+                            <center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/90.png" /></p><br />
+                            <h2 id="executar-o-projeto-war-toncat7">Executar o projeto .WAR [Toncat7]</h2>
                                     <br />
+                            </center>
                                         <p><strong>13)</strong> Executar, no tomcat, o projeto <strong>RegrasRMA.war</strong>.</p>
+                            <center>            
                                         <p>Duplo clique sobre o arquivo <strong>StartServer.bat</strong> que está na pasta <strong>C:\Blaze\projetos\tomcat7.</strong></p>
-                                        <center><pre><code><p>Observação: O tomcat7 irá rodar no <strong>http://localhost:8081</strong> </p></code></pre></center>
+                                        <pre><code><p>Observação: O tomcat7 irá rodar no <strong>http://localhost:8081</strong> </p></code></pre>
+                            </center>
                                         <p><strong>14)</strong> Após o servidor tomcat está ativo no localhost 8081, basta ir na pasta RMA e copiar o arquivo <strong>RegrasRMA.war</strong> para a pasta webapps:</p> 
-                                        <center><pre><code><p><strong>C:\Blaze\projetos\tomcat7\tomcat7\webapps</strong></p></code></pre><br /></center>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/91.png" /></p></center>
-                                            <center><pre><code><p>Observação: Se o servidor tomcat estiver ativo, o arquivo <strong>RegrasRMA.war</strong> será descompactado automaticamente.</p></code></pre></center><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/92.png" /></p></center>
+                            <center>
+                                        <pre><code><p><strong>C:\Blaze\projetos\tomcat7\tomcat7\webapps</strong></p></code></pre><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/91.png" /></p>
+                                        <pre><code><p>Observação: Se o servidor tomcat estiver ativo, o arquivo <strong>RegrasRMA.war</strong> será descompactado automaticamente.</p></code></pre><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/92.png" /></p>
+                            </center>
                                         <p><strong>15)</strong> Após executar todo o processo de gerar o <strong>arquivo.WAR</strong> e descompactá-lo na pasta webapps do tomcat, basta ir no navegador que o tomcat e digitar o nome do projeto [<strong>RegrasRMA</strong>] como na imagem abaixo. </p><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/93.png" /></p></center>
+                            <center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/93.png" /></p>
+                            </center>
                                         <p><strong>16)</strong>Isso irá gerar o RMA do Blaze no tomcat7. Basta logar e começar a criar suas regras de negócio.</p><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/94.png" /></p></center><br />
-                            <center><h2 id="deploy-rule-server-configuracoes">Deploy [Rule Server] - Configurações</h2></center>
-                                    <br />
-                                        <center><pre><code><p>Iremos gerar um Deploy de serviço de regras, isto é, iremos gerar uma aplicação pronta para ser executada. </p></code></pre></center>
+                            <center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/94.png" /></p><br />
+                            </center>
+                            
+                            <center>
+                                        <h2 id="deploy-rule-server-configuracoes">Deploy [Rule Server] - Configurações</h2>
+                                            <br />
+                                        <pre><code><p>Iremos gerar um Deploy de serviço de regras, isto é, iremos gerar uma aplicação pronta para ser executada. </p></code></pre>
+                            </center>
                                         <p><strong>17)</strong> Primeiro, você deverá criar uma pasta com o nome de <strong>RuleServer</strong> dentro da pasta projetos. </p>
                                         <p><strong>18)</strong>Vá no Eclipse e na pasta Deploy deverá ter três arquivos de configuração.</p>
+                            <center>            
                                         <p>Primeiro arquivo de configuração: [<strong>Rule Service Definition</strong>]</p>
                                         <li>Clicar com o botão direito do mouse sobre a pasta Deploy.</li>
-                                            <center><pre><code><p>New - Deployment Entities - Rule Service Definition.</p></code></pre></center><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/95.png" /></p></center><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/96.png" /></p></center><br />
+                                        <pre><code><p>New - Deployment Entities - Rule Service Definition.</p></code></pre><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/95.png" /></p><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/96.png" /></p><br />
                                         <li> Manter o mesmo nome, porém sem os espaços e caracteres especiais. Observe o exemplo abaixo:</li><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/97.png" /></p></center>
+                                        <p><img alt="Screenshot" src="images/ficoimg/97.png" /></p>
                                         <li> Na aba de <strong>DefinicaoDoServicoDeRegras</strong>, vá em Add... [adicionar...] </li>
                                         <li> Em [Functional Item], escolha a opção <strong>entrypoint(decisionInput):DecisionInput</strong></li><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/98.png" /></p></center><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/99.png" /></p></center><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/98.png" /></p><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/99.png" /></p><br />
                                         <li>Salvar e fazer o Check-in. </li><br />
+                            </center>
                                         <p><strong>19)</strong> Segundo arquivo de configuração: [<strong>Deployment Definition</strong>]</p>
+                            <center>
                                         <li>Clicar com o botão direito do mouse sobre a pasta Deploy.</li><br />
-                                            <center><pre><code><p>New - Deployment Entities - Deployment Definition.</p></code></pre></center>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/100.png" /></p></center>
+                                        <pre><code><p>New - Deployment Entities - Deployment Definition.</p></code></pre>
+                                        <p><img alt="Screenshot" src="images/ficoimg/100.png" /></p>
                                         <li>Manter o mesmo nome, porém sem os espaços e caracteres especiais. Observe o exemplo abaixo:</li><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/101.png" /></p></center><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/101.png" /></p><br />
                                         <li>Na aba de DefinicaoDeImplementacao, em Plataforma de Destino, escolha a opção <strong>Java POJO Web Service</strong>.</li><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/102.png" /></p></center>
-                                        <li>Salvar e fazer o Check-in.<li><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/102.png" /></p>
+                                        <li>Salvar e fazer o Check-in.</li><br />
+                            </center>
                                         <p><strong>20)</strong> Terceiro arquivo de configuração:</p>
+                            <center>
                                         <li>Clicar com o botão direito do mouse sobre a pasta Deploy.</li><br />
-                                            <center><pre><code><p>New - Deployment Entities - System Definition.</code></pre></center>
-                                            <center><img alt="Screenshot" src="images/ficoimg/103.png" /></p></center>
+                                        <pre><code><p>New - Deployment Entities - System Definition.</code></pre>
+                                        <img alt="Screenshot" src="images/ficoimg/103.png" /></p>
                                         <li>Manter o mesmo nome, porém sem os espaços e caracteres especiais [DefinicaoDoSistema].</li><br />
                                         <p>Na aba de DefinicaoDoSistema:</p>
                                         <li>Em Plataforma de Destino, escolha a opção <strong>Java POJO Web Service</strong>.</li>
                                         <li>Em Fornecedor, escolha a opção <strong>Tomcat8 and later</strong>.</li><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/104.png" /></p></center><br />
+                                        <p><img alt="Screenshot" src="images/ficoimg/104.png" /></p><br />
                                         <li>Salvar e fazer o Check-in.</li><br />
-                            <center><h2 id="deploy-rule-server-gerando-arquivos">Deploy [Rule Server] - Gerando Arquivos</h2></center>
+                            <h2 id="deploy-rule-server-gerando-arquivos">Deploy [Rule Server] - Gerando Arquivos</h2>
                                     <br />
-                                        <center><pre><code><p>Copiar o caminho da pasta ruleserver que você criou. No meu caso, a pasta está em: C:\Blaze\projetos\ruleserver.</p></code></pre></center>
+                                        <pre><code><p>Copiar o caminho da pasta ruleserver que você criou. No meu caso, a pasta está em: C:\Blaze\projetos\ruleserver.</p></code></pre>
+                            </center>
                                         <p><strong>21)</strong> Vá para o Eclipse, selecionar o projeto principal e ir na aba Project:</p> 
-                                        <center><pre><code>
+                            <center>
+                                    <pre><code>
                                         <li>Generate Rule Service Deployment [Gerar Implementação de Serviço de Regras]<li> 
                                         <li>Obs: o Eclipse irá encontrar as configurações que acabamos de fazer. [Tópico - Deploy [Rule Server] - Configurações].</li>
                                         <li>Next - Next - Selecionar ou colar o caminho da pasta ruleserver - Next.</li>
-                                        </code></pre></center><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/105.png" /></p></center><br />
+                                        </code></pre>
+                                        <br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/105.png" /></p><br />
                                         <p>Nesta parte, basta observar se os arquivos selecionados são do tipo aquivo.bat</p>
                                         <p>Finish.</p>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/106.png" /></p></center><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/107.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/106.png" /></p><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/107.png" /></p><br />
                                         <li>Ao abrir a pasta ruleserver, você poderá observar alguns arquivos lá. </li><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/108.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/108.png" /></p><br />
                                         <li>O arquivo DeploymentDocumentation.html é uma documentação que guia o processo de deploy. </li><br />
-                            <center><h2 id="deploy-rule-server">Deploy [Rule Server]</h2></center>
+                                <h2 id="deploy-rule-server">Deploy [Rule Server]</h2>
                                     <br />
-                                        <center><pre><code><p>Agora iremos configurar alguns arquivos que foram gerados pelo processo anterior, na pasta Server. Lembrando que esta pasta se encontra dentro da pasta ruleserver. </p></code></pre></center>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/109.png" /></p></center><br />
+                                            <pre><code><p>Agora iremos configurar alguns arquivos que foram gerados pelo processo anterior, na pasta Server. Lembrando que esta pasta se encontra dentro da pasta ruleserver. </p></code></pre>
+                                            <p><img alt="Screenshot" src="images/ficoimg/109.png" /></p><br />
+                                </center>
                                             <p><strong>22)</strong> Ir na pasta ruleserver/server.</p>
                                             <p><strong>23)</strong> Abrir o arquivo Setenv.bat com o notepad++</p>
                                             <p><strong>24)</strong> Você deve referenciar corretamente os caminhos de:</p>
+                                <center>
                                             <li><strong>TOMCAT_HOME=C:\apache-tomcat-8.5.24</strong> e <strong>JAVA_HOME=C:\Java\jdk</strong></li><br />
                                             <p>Observe a imagem a seguir:</p>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/110.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/110.png" /></p><br />
                                             <p>Acrescentar o seguinte código na linha 99 [<strong>set CLASSPATH=%CLASSPATH%;C:\Blaze\projetos\bom-Carro3.jar;</strong>]</p>
                                             <li>Este (C:\Blaze\projetos\bom-Carro3.jar) é o caminho do meu arquivo.jar</li><br />
                                             <p>Salvar as alterações</p>
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/111.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/111.png" /></p><br />
                                             <p>Configurando o Script [War.bat]</p>
+                                </center>
                                             <p><strong>25) </strong>Abrir o arquivo War.bat no notepad++</p>
+                                <center>
                                             <li>Na linha 58, adicionar o código descrito na imagem abaixo. Atenção: o caminho que digitei é o caminho do meu arquivo bom-Carro3.jar</li><br />
                                             <p>Salvar as alterações.</p>
-                                                <center><img alt="Screenshot" src="images/ficoimg/116.png" /></p></center><br />
+                                            <img alt="Screenshot" src="images/ficoimg/116.png" /></p><br />
                                             <blockquote>
-                                                <center><p>Não se esqueça de salvar as alterações!</p></center>
+                                                <p>Não se esqueça de salvar as alterações!</p>
                                             </blockquote>
+                                </center>
                                             <p><strong>26)</strong> Rodar o Script [Setenv]</p>
+                                <center>
                                             <li>Ir na pasta ruleserver/server.</li>
                                             <li>Digitar cmd na barra de caminhos e apertar enter.</li><br />
                                             <p>Isso irá abrir o cmd na pasta server</p>
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/112.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/112.png" /></p><br />
                                             <p>Basta digitar Setenv.bat e pressionar enter para executar o arquivo que acabamos de configurar. </p><br />
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/113.png" /></p></center><br />
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/114.png" /></p></center><br />
+                                                <p><img alt="Screenshot" src="images/ficoimg/113.png" /></p><br />
+                                                <p><img alt="Screenshot" src="images/ficoimg/114.png" /></p><br />
                                             <p>Rodando o Script [Build.bat]</p>
+                                </center>
                                             <p><strong>27)</strong> Ainda no cmd do windows (deve ser na mesma janela que você digitou o Server.bat)<ul></ul>
+                                <center>
                                             <li>Digite Build.bat e aperte enter.</li><br /> 
                                             <p>Este comando irá compilar algumas classes.</p>
-                                                <center><img alt="Screenshot" src="images/ficoimg/115.png" /></p></center></br>
+                                            <img alt="Screenshot" src="images/ficoimg/115.png" /></p></br>
                                             <p>Rodando o arquivo [War.bat]</p>
+                                </center>
                                             <p><strong>28)</strong> Ainda no cmd do windows (Deve ser na mesma janela que você digitou o Server.bat e Build.bat)</p>
+                                <center>            
                                             <p>Digite War.bat e aperte enter.</p>
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/117.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/117.png" /></p><br />
                                             <p>Este comando irá gerar uma série de arquivos, inclusive um arquivo.war dentro da pasta C:\Blaze\projetos\ruleserver\server\build. Para este projeto, o nome do arquivo ficou como: <strong>DefinicaoDoServicoDeRegrasServer.war</strong></p>
                                             <li>Este .war é o nosso ruleserver. Ele que vai gerar um up server no tomcat. </li>                        
                                             <li>Fechar o cmd.</li>
-                            <center><h2 id="gerando-uma-aplicacao-toncat">Gerando uma aplicação Toncat</h2></center>
+                                    <h2 id="gerando-uma-aplicacao-toncat">Gerando uma aplicação Toncat</h2>
                                     <br />
-                                        <center><pre><code><p>Startar o Toncat7 pelo arquivo <strong>startServer.bat</strong> (dando um duplo clique) que está na pasta <strong>C:\Blaze\projetos\tomcat7</strong></p></code></pre></center><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/118.png" /></p></center><br />
+                                            <pre><code><p>Startar o Toncat7 pelo arquivo <strong>startServer.bat</strong> (dando um duplo clique) que está na pasta <strong>C:\Blaze\projetos\tomcat7</strong></p></code></pre><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/118.png" /></p><br />
+                                </center>
                                             <p><strong>29)</strong> Copiar o arquivo.war [<strong>DefinicaoDoServicoDeRegrasServer.war</strong>] da pasta <strong>C:\Blaze\projetos\ruleserver\server\build</strong> para a pasta <strong>C:\Blaze\projetos\tomcat7\tomcat7\webapps</strong></p>
+                                <center>            
                                             <li>Se tudo estiver correto, o arquivo <strong>DefinicaoDoServicoDeRegrasServer.war</strong> irá se descompactar automaticamente gerando uma pasta de mesmo nome. </li><br />
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/119.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/119.png" /></p><br />
+                                </center>
                                             <p><strong>30)</strong> Ir na pasta C:\Blaze\projetos\ruleserver e abrir o arquivo DeploymentDocumentation.html dando um duplo clique sobre ele. </p>
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/120.png" /></p></center><br />
+                                <center>
+                                            <p><img alt="Screenshot" src="images/ficoimg/120.png" /></p><br />
                                             <li>Procurar e copiar o seguinte link WSDL: </li>
                                             <blockquote>
-                                                <center><p>http://localhost:8080/DefinicaoDoServicoDeRegrasServer/DefinicaoDoServicoDeRegrasService?wsdl</p></center>
+                                                <p>http://localhost:8080/DefinicaoDoServicoDeRegrasServer/DefinicaoDoServicoDeRegrasService?wsdl</p>
                                             </blockquote>
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/121.png" /></p></center><br />
+                                                <p><img alt="Screenshot" src="images/ficoimg/121.png" /></p><br />
                                             <li>Colar o link em seu navegador. </li>
                                             <li>Obs: trocar a porta 8080 por 8081. </li>
                                             <li>O link ficará assim: </li>
                                             <blockquote>
-                                                <center><p>http://localhost:8081/DefinicaoDoServicoDeRegrasServer/DefinicaoDoServicoDeRegrasService?wsdl</p></center>
+                                                <p>http://localhost:8081/DefinicaoDoServicoDeRegrasServer/DefinicaoDoServicoDeRegrasService?wsdl</p>
                                             </blockquote>
                                             <p>Sua aplicação retornará um XML assim:</p>
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/122.png" /></p></center><br />
-                            <center><h2 id="testando-a-aplicacao-no-soapui">Testando a Aplicação no SoapUI</h2></center>
+                                                <p><img alt="Screenshot" src="images/ficoimg/122.png" /></p><br />
+                                <h2 id="testando-a-aplicacao-no-soapui">Testando a Aplicação no SoapUI</h2>
                                     <br />
-                                        <center><pre><code><p>Criar uma pasta [workspaceSoap] dentro da pasta Projetos.</p></code></pre></center><br /> 
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/125.png" /></p></center>
+                                            <pre><code><p>Criar uma pasta [workspaceSoap] dentro da pasta Projetos.</p></code></pre><br /> 
+                                            <p><img alt="Screenshot" src="images/ficoimg/125.png" /></p>
+                                </center>
                                             <p><strong>31)</strong> Instalar o SoapUI</p>
-                                            <center><pre><code><p>Baixe o SoapUI [SoapUI-x32-5.5.0.exe] do Repositório que disponibilizei: <button onclick="window.open('https://drive.google.com/drive/folders/1XjpXLq40dpZurVS4NesaBRvp3_zAlgFl?usp=sharing');">REPOSITÓRIO</button></p></code></pre></center>
+                                <center>
+                                            <pre><code><p>Baixe o SoapUI [SoapUI-x32-5.5.0.exe] do Repositório que disponibilizei: <button onclick="window.open('https://drive.google.com/drive/folders/1XjpXLq40dpZurVS4NesaBRvp3_zAlgFl?usp=sharing');">REPOSITÓRIO</button></p></code></pre>
                                             <li>Duplo clique sobre o executável e ir dando next. </li>
                                             <li>O SoapUI abrirá sua janela inicial.</li>
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/123.png" /></p></center><br />
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/124.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/123.png" /></p><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/124.png" /></p><br />
+                                </center>
                                             <p><strong>32)</strong> No SoapUI, vá em:</p>
-                                            <center><pre><code><p>File - New Workspace - dar o nome de workspaceSoap </p></code></pre></center><br />
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/126.png" /></p></center><br />
+                                <center>
+                                            <pre><code><p>File - New Workspace - dar o nome de workspaceSoap </p></code></pre><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/126.png" /></p><br />
                                             <li>Escolher a pasta workspaceSoap que criamos dentro da pasta Projetos.</li><br />
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/127.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/127.png" /></p><br />
                                             <li>Salvar.</li><br />
                                             <p>Ainda no SoapUI:</p>
-                                            <center><pre><code><p>File - New Soap Project.</p></code></pre></center><br />
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/128.png" /></p></center><br />
+                                            <pre><code><p>File - New Soap Project.</p></code></pre><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/128.png" /></p><br />
                                             <p><strong>Atenção:</strong> colar o link WSDL que geramos para o tomcat anteriormente: </p>
                                             <blockquote>
-                                                <center><p>http://localhost:8081/DefinicaoDoServicoDeRegrasServer/DefinicaoDoServicoDeRegrasService?wsdl</p></center>
+                                                <p>http://localhost:8081/DefinicaoDoServicoDeRegrasServer/DefinicaoDoServicoDeRegrasService?wsdl</p>
                                             </blockquote>
                                             <li>O nome do projeto será gerado automaticamente. </li><br />
-                                            <center><p><img alt="Screenshot" src="images/ficoimg/129.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/129.png" /></p><br />
                                             <p>O Soap importará o serviço e gerará um request. [entrypoint]</p>
                                             <li> Clicando no arquivo: entrypoint/Request1 teremos uma comunicação com a aplicação. Basta digitar os dados do cliente no lugar das interrogações (?) e teremos o output dos dados inseridos. </li>
                                             <li> Para isso, basta digitar os dados e ir no ícone Rodar.</li><br />
-                                                <center><p><img alt="Screenshot" src="images/ficoimg/130.png" /></p></center><br />
-                            <center><h2 id="consideracoes-finais">Considerações finais</h2></center>
-                                    <br />
-                                    <p>Como você podê ver, nossa aplicação é bem simples e apresenta várias inconsistências como, por exemplo, possuir dados que não estão sendo utilizados. 
-                                        Mas nosso objetivo era apenas introduzir o Blaze. </p>
-                                    <p>Esta aplicação recebe dois valores principais (idade e renda) e retorna Negado caso a idade seja menor do que 18 ou a renda menor do que R$ 1000. Ou seja, não estão aptos a alugar um carro. 
-                                        No exemplo acima, a idade é de 22 anos e a renda é de R$ 5420, ou seja, é um cliente apto a alugar um carro.  <br />
-                                            Já no exemplo abaixo, a idade é de 16 e a renda de R$ 5420. Mesmo a renda sendo maior do que R$ 1000, o resultado é Negado, pois a idade é menor do que 18. </p>
-                                    <br />  
-                                    <center><p><img alt="Screenshot" src="images/ficoimg/131.png" /></p></center><br />
+                                            <p><img alt="Screenshot" src="images/ficoimg/130.png" /></p><br />
+                                    <h2 id="consideracoes-finais">Considerações finais</h2>
+                                        <br />
+                                        <p>Como você podê ver, nossa aplicação é bem simples e apresenta várias inconsistências como, por exemplo, possuir dados que não estão sendo utilizados. 
+                                            Mas nosso objetivo era apenas introduzir o Blaze. </p>
+                                        <p>Esta aplicação recebe dois valores principais (idade e renda) e retorna Negado caso a idade seja menor do que 18 ou a renda menor do que R$ 1000. Ou seja, não estão aptos a alugar um carro. 
+                                            No exemplo acima, a idade é de 22 anos e a renda é de R$ 5420, ou seja, é um cliente apto a alugar um carro.  <br />
+                                                Já no exemplo abaixo, a idade é de 16 e a renda de R$ 5420. Mesmo a renda sendo maior do que R$ 1000, o resultado é Negado, pois a idade é menor do que 18. </p>
+                                            <br />  
+                                        <p><img alt="Screenshot" src="images/ficoimg/131.png" /></p><br />
+                                </center>
                         <!--Finalizado Conteudo-->
                                             
                         <!--Conteudo Extra-->
